@@ -5,12 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fredrick the Great Font  -->
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+<!-- Patrick Hand  -->
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
 
     <title>Weather</title>
 </head>
 <body>
+
+
+<!-- DIV - WEATHER INFORMATION -->
+    <div class="container">
+        <!-- Current Date -->
+        <div class="currentDate" style="font-size: 35px;">
+        </div>
+        <br>
+        <br>
+        <!-- DIV - USER INPUT SEARCH -->
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Zip Code">
+            <button class="button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path></svg></button>
+        </div>
+        <br>
+        <br> 
     
+        <!-- Location Name -->
+        <div class="location" style="font-size: 55px; font-family: 'Fredericka the Great', cursive;">Kannapolis, NC</div>
+        <!-- horizontal rule -->
+        <hr>
+        <br>
+
+        <!-- Current Temperature -->
+        <div class="current">
+            <div class="f">88°F</div>
+            <div class="circle"></div>
+            <div class="c">34° C </div>
+        </div>
+
+        <!-- Current Conditions -->
+        <div class="cond"> Sunny, Clear Skies</div>
+    <!-- Weather Icon Picture -->
+    <div class=> 
+        <img src="https://openweathermap.org/img/wn/04n.png" class="weather-icon">
+        </div>
+
+        <!-- Today's High & Low  -->
+        <div class="highLow">
+            <div class="h">High: 90°F</div>
+            <div class="circle"></div>
+            <div class="l"> Low: 76° F</div>
+        </div>
+        <div>
+            <h4>Feels Like:</h4>
+            <div class="feels"></div>
+        </div>
+        <!-- Sunrise and Sunset -->
+        <div class="sun">
+            <h4>Sunrise: <span class="sunrise"> Sunrise information</span></h4>
+            <h4>Sunset: <span class="sunset"> Sunrise information</span></h4>
+        </div>
+    </div>
 
 
 
@@ -22,6 +81,6 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
